@@ -1,5 +1,5 @@
 .contributors {
-  width: 460px;
+  width: 90%;
   height: 244px;
   div {
     display: flex;
@@ -58,5 +58,11 @@
     font-weight: 700;
     font-size: 18px;
     line-height: 27px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contributors {
+    width: 40%;
   }
 }

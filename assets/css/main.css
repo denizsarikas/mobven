@@ -45,7 +45,7 @@ a {
 }
 
 .languages {
-  width: 40%;
+  width: 350px;
   height: 12.313rem;
 }
 .languages div {
@@ -97,8 +97,21 @@ a {
   background-color: #e4bd31;
 }
 
+meter {
+  width: 100%;
+  height: 25%;
+}
+
+meter::-webkit-meter-bar {
+  background-color: #e4bd31;
+}
+
+meter::-webkit-meter-optimum-value {
+  background-color: #5398ff;
+}
+
 .contributors {
-  width: 460px;
+  width: 90%;
   height: 244px;
 }
 .contributors div {
@@ -181,6 +194,11 @@ a {
   line-height: 27px;
 }
 
+@media screen and (min-width: 768px) {
+  .contributors {
+    width: 40%;
+  }
+}
 body section {
   background-color: #222C85;
   border-radius: 50px;

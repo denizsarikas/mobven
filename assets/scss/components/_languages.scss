@@ -1,6 +1,6 @@
 .languages {
   // width: 28.063rem;
-  width: 40%;
+  width: 350px;
   height: 12.313rem;
 
   & div {
@@ -51,4 +51,17 @@
   height: 12px;
   border-radius: 50%;
   background-color: #e4bd31;
+}
+
+meter {
+  width: 100%;
+  height: 25%;
+}
+
+meter::-webkit-meter-bar {
+  background-color: #e4bd31;
+}
+
+meter::-webkit-meter-optimum-value {
+  background-color: #5398ff;
 }
