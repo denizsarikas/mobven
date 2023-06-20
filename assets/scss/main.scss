@@ -1,0 +1,22 @@
+@import "./base";
+@import "./abstracts/";
+@import "./layout/";
+@import "./components";
+
+body {
+  section {
+    background-color: $primary-color;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: $main-font;
+    padding: 2.5rem 2.125rem;
+    gap: 1.5rem;
+  }
+}
+
+svg {
+  width: 32px;
+  height: 32px;
+}

@@ -1,0 +1,23 @@
+.about {
+  width: 21.125rem;
+  height: 22.25rem;
+
+  & h1 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  & h4,
+  & a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Poppins';
+  }
+}

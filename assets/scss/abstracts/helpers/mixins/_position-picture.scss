@@ -1,0 +1,9 @@
+@mixin positionLeft($left: 0) {
+    position: absolute;
+    top: 0;
+    left: #{$left}px;
+    width: 56px;
+    height: 56px;
+    border: 4px solid #222c85;
+    border-radius: 100%;
+  }
