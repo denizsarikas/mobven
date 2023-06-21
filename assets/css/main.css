@@ -23,12 +23,6 @@ a {
   width: 21.125rem;
   height: 22.25rem;
 }
-.about__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-}
 .about__description {
   display: flex;
   align-items: center;
@@ -44,14 +38,8 @@ a {
   width: 350px;
   height: 12.313rem;
 }
-.language__title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 30px;
-}
 .language__meter {
-  height: 3em;
+  height: 200px;
   width: 100%;
 }
 .language__meter::-webkit-meter-bar {
@@ -65,7 +53,7 @@ a {
   height: 0.75rem;
   display: flex;
 }
-.language__list-item {
+.language__item {
   margin-right: 10px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -73,7 +61,7 @@ a {
   font-size: 18px;
   line-height: 27px;
 }
-.language__list-item::before {
+.language__item::before {
   content: "";
   display: inline-block;
   margin-right: 5px;
@@ -81,10 +69,10 @@ a {
   height: 12px;
   border-radius: 50%;
 }
-.language__list-item--blue::before {
+.language__item.-blue::before {
   background-color: #5398ff;
 }
-.language__list-item--orange::before {
+.language__item.-orange::before {
   background-color: #e4bd31;
 }
 
@@ -99,25 +87,25 @@ a {
   line-height: 30px;
   padding: 14px;
 }
-.contributor__title--count {
+.contributor__title.-count {
   width: 47px;
   height: 50px;
   margin-left: 10px;
   padding: 10px;
-  background: #121C75;
+  background: #121c75;
   border-radius: 4px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
-.contributor__image {
+.contributor__group {
   position: relative;
   background: #222c85;
   border-radius: 50px;
   color: white;
   padding: 24px;
 }
-.contributor__image-item--first {
+.contributor__item.-first {
   position: absolute;
   top: 0;
   left: 0px;
@@ -126,7 +114,7 @@ a {
   border: 4px solid #222c85;
   border-radius: 100%;
 }
-.contributor__image-item--second {
+.contributor__item.-second {
   position: absolute;
   top: 0;
   left: 45px;
@@ -135,7 +123,7 @@ a {
   border: 4px solid #222c85;
   border-radius: 100%;
 }
-.contributor__image-item--third {
+.contributor__item.-third {
   position: absolute;
   top: 0;
   left: 90px;
@@ -144,7 +132,7 @@ a {
   border: 4px solid #222c85;
   border-radius: 100%;
 }
-.contributor__image-item--fourth {
+.contributor__item.-fourth {
   position: absolute;
   top: 0;
   left: 135px;
@@ -153,7 +141,7 @@ a {
   border: 4px solid #222c85;
   border-radius: 100%;
 }
-.contributor__image-item--last {
+.contributor__item.-last {
   background: #ffffff;
   border: 4px solid #222c85;
   width: 56px;
@@ -183,6 +171,12 @@ body section {
   padding: 2.5rem 2.125rem;
   gap: 1.5rem;
   margin: 3em;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
 }
 
 svg {

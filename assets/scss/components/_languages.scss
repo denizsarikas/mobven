@@ -3,15 +3,9 @@
   width: 350px;
   height: 12.313rem;
 
-  &__title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-  }
 
   &__meter {
-    height: 3em;
+    height: 200px;
     width: 100%;
 
     &::-webkit-meter-bar {
@@ -27,31 +21,30 @@
     width: 100%;
     height: 0.75rem;
     display: flex;
+  }
 
-    &-item {
-      margin-right: 10px;
-      font-family: "Poppins", sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 27px;
+  &__item {
+    margin-right: 10px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
 
-      &::before {
-        content: "";
-        display: inline-block;
-        margin-right: 5px;
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-      }
+    &::before {
+      content: "";
+      display: inline-block;
+      margin-right: 5px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+    }
 
-      &--blue::before {
-        background-color: #5398ff;
-      }
-      &--orange::before {
-        background-color: #e4bd31;
-      }
+    &.-blue::before {
+      background-color: #5398ff;
+    }
+    &.-orange::before {
+      background-color: #e4bd31;
     }
   }
 }
-
