@@ -15,25 +15,21 @@ a {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  gap: 35px;
+  margin: 0 auto;
+  width: 800px;
 }
 
 .about {
   width: 21.125rem;
   height: 22.25rem;
 }
-.about h1 {
+.about__title {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
-.about h4, .about a {
+.about__description {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -44,31 +40,32 @@ a {
   font-family: "Poppins";
 }
 
-.languages {
+.language {
   width: 350px;
   height: 12.313rem;
 }
-.languages div {
+.language__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+}
+.language__meter {
+  height: 3em;
+  width: 100%;
+}
+.language__meter::-webkit-meter-bar {
+  background-color: #5398ff;
+}
+.language__meter::-webkit-meter-optimum-value {
+  background-color: #e4bd31;
+}
+.language__list {
   width: 100%;
   height: 0.75rem;
   display: flex;
 }
-
-.languages-blue {
-  width: 29%;
-  height: 12px;
-  background: #5398ff;
-  border-radius: 10px 0 0 10px;
-}
-
-.languages-orange {
-  width: 81%;
-  height: 12px;
-  background: #e4bd31;
-  border-radius: 0 10px 10px 0;
-}
-
-.list p {
+.language__list-item {
   margin-right: 10px;
   font-family: "Poppins", sans-serif;
   font-style: normal;
@@ -76,69 +73,51 @@ a {
   font-size: 18px;
   line-height: 27px;
 }
-
-.list p.dot-blue::before {
+.language__list-item::before {
   content: "";
   display: inline-block;
   margin-right: 5px;
   width: 12px;
   height: 12px;
   border-radius: 50%;
+}
+.language__list-item--blue::before {
   background-color: #5398ff;
 }
-
-.list p.dot-orange::before {
-  content: "";
-  display: inline-block;
-  margin-right: 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
+.language__list-item--orange::before {
   background-color: #e4bd31;
 }
 
-meter {
-  width: 100%;
-  height: 25%;
+.contributor {
+  width: 60%;
 }
-
-meter::-webkit-meter-bar {
-  background-color: #e4bd31;
-}
-
-meter::-webkit-meter-optimum-value {
-  background-color: #5398ff;
-}
-
-.contributors {
-  width: 90%;
-  height: 244px;
-}
-.contributors div {
+.contributor__title {
   display: flex;
   align-items: center;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
+  padding: 14px;
 }
-.contributors div h1 {
+.contributor__title--count {
   width: 47px;
   height: 50px;
   margin-left: 10px;
   padding: 10px;
-  background: #121c75;
+  background: #121C75;
   border-radius: 4px;
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
 }
-.contributors .images {
+.contributor__image {
   position: relative;
   background: #222c85;
   border-radius: 50px;
   color: white;
+  padding: 24px;
 }
-.contributors .img1-ws {
+.contributor__image-item--first {
   position: absolute;
   top: 0;
   left: 0px;
@@ -147,7 +126,7 @@ meter::-webkit-meter-optimum-value {
   border: 4px solid #222c85;
   border-radius: 100%;
 }
-.contributors .img2-ws {
+.contributor__image-item--second {
   position: absolute;
   top: 0;
   left: 45px;
@@ -156,7 +135,7 @@ meter::-webkit-meter-optimum-value {
   border: 4px solid #222c85;
   border-radius: 100%;
 }
-.contributors .img3-ws {
+.contributor__image-item--third {
   position: absolute;
   top: 0;
   left: 90px;
@@ -165,7 +144,7 @@ meter::-webkit-meter-optimum-value {
   border: 4px solid #222c85;
   border-radius: 100%;
 }
-.contributors .img4-ws {
+.contributor__image-item--fourth {
   position: absolute;
   top: 0;
   left: 135px;
@@ -174,7 +153,7 @@ meter::-webkit-meter-optimum-value {
   border: 4px solid #222c85;
   border-radius: 100%;
 }
-.contributors .img5-ws {
+.contributor__image-item--last {
   background: #ffffff;
   border: 4px solid #222c85;
   width: 56px;
@@ -194,11 +173,6 @@ meter::-webkit-meter-optimum-value {
   line-height: 27px;
 }
 
-@media screen and (min-width: 768px) {
-  .contributors {
-    width: 40%;
-  }
-}
 body section {
   background-color: #222C85;
   border-radius: 50px;
@@ -208,6 +182,7 @@ body section {
   font-family: "Merriweather";
   padding: 2.5rem 2.125rem;
   gap: 1.5rem;
+  margin: 3em;
 }
 
 svg {

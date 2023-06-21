@@ -1,68 +1,69 @@
-.contributors {
-  width: 90%;
-  height: 244px;
-  div {
+
+.contributor {
+  width: 60%;
+
+  &__title {
     display: flex;
     align-items: center;
     font-weight: 700;
     font-size: 24px;
     line-height: 30px;
+    padding: 14px;
+
+    &--count {
+      width: 47px;
+      height: 50px;
+      margin-left: 10px;
+      padding: 10px;
+      background: #121C75;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 30px;
+    }
   }
 
-  div h1 {
-    width: 47px;
-    height: 50px;
-    margin-left: 10px;
-    padding: 10px;
-    background: #121c75;
-    border-radius: 4px;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 30px;
-  }
-
-  .images {
+  &__image {
     position: relative;
     background: #222c85;
     border-radius: 50px;
     color: white;
-  }
+    padding: 24px;
 
-  & .img1-ws {
-    @include positionLeft(0);
-  }
-  & .img2-ws {
-    @include positionLeft(45);
-  }
-  & .img3-ws {
-    @include positionLeft(90);
-  }
-  & .img4-ws {
-    @include positionLeft(135);
-  }
-  & .img5-ws {
-    background: #ffffff;
-    border: 4px solid #222c85;
-    width: 56px;
-    height: 56px;
-    position: absolute;
-    top: 0;
-    left: 180px;
-    border-radius: 100%;
-    color: #222c85;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 27px;
-  }
-}
+    &-item {
+      //buraya da tasiyabilirim
 
-@media screen and (min-width: 768px) {
-  .contributors {
-    width: 40%;
+      &--first {
+        @include positionLeft(0);
+      }
+      &--second {
+        @include positionLeft(45);
+      }
+      &--third {
+        @include positionLeft(90);
+      }
+      &--fourth {
+        @include positionLeft(135);
+      }
+      &--last {
+        background: #ffffff;
+        border: 4px solid #222c85;
+        width: 56px;
+        height: 56px;
+        position: absolute;
+        top: 0;
+        left: 180px;
+        border-radius: 100%;
+        color: #222c85;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 27px;
+      }
+    }
   }
 }
