@@ -1,14 +1,28 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    background-color: $background-color;
-  }
+*,
+*:before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box !important;
+  -moz-box-sizing: border-box !important;
+  -ms-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
 
-  a{
-    text-decoration: underline;
-    color: white;
-  }
+li {
+  list-style: none;
+}
+
+select, input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+body {
+  background-color: $ecru-white;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

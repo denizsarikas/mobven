@@ -1,0 +1,40 @@
+.group {
+  width: 100%;
+
+  &.-column {
+    @include flex(column);
+  }
+
+  &.-row {
+    @include flex(row, baseline, center);
+  }
+
+  &__item.-tick {
+    font-size: $fs-md;
+    padding-left: $lg;
+    position: relative;
+    &::before {
+      content:"";
+      position: absolute;
+      left: 13px;
+      top: 5px;
+      height: 14px;
+      width:3px;
+      border-radius: 4px;
+      background-color: $downriver;
+      transform: rotate(40deg)
+    }
+    &::after {
+      content:"";
+      position: absolute;
+      top:11px;
+      left:7px;
+      width: 3px;
+      height: 8px;
+      border-radius: 4px;
+      background-color: $downriver;
+      transform: rotate(-45deg);
+    }
+  }
+
+}

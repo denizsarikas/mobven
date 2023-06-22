@@ -1,0 +1,11 @@
+.label {
+    font-size: $fs-sm;
+
+    &.-unvisible {
+        display: none;
+    }
+    
+    &.-lg {
+        font-size: $fs-md;
+    }
+}

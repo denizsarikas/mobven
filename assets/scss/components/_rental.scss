@@ -1,0 +1,40 @@
+.rental {
+    @include flex(column,center,flex-start);
+    font-family: $first-font;
+    font-weight: $font-bold;
+    color: $downriver;
+    padding: $xxxl;
+    gap: $xl;
+    border-radius: $lg;
+    box-shadow: $shadow;
+    background-color: $white;
+    position: relative;
+    width: 750px;
+    &__form {
+        width: 100%;
+    }
+
+    &::before {
+        position:absolute;
+        content: "";
+        width: 484px;
+        height: 632px; 
+        top: -109px;
+        left: -98px; 
+        border-radius: $r-lg;
+        background-color: $goldenrod;
+        z-index: -1;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 410px;
+        right: -175px;
+        bottom: -78px;
+        border-radius: $r-xl;
+        background-color: $atomic-tangerine;
+        z-index: -1;
+    }
+}
