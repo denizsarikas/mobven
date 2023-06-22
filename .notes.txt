@@ -1,0 +1,5 @@
+-100% olduğunda duzgun gozukmuyor
+-checkbox tıklamasında sıkıntılar var bu yuzden
+-time tamamen aynı değil
+-time ve date inputları için içini kaplayacak şekilde input koyup flex
+space between ile daha duzgun yerleştirilebilir.

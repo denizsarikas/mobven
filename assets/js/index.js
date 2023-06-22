@@ -16,7 +16,18 @@ checkboxOption.addEventListener("change", (e) => {
 const pickUpDate = document.getElementById("pickDate");
 pickUpDate.addEventListener("change", (e) => {
   e.preventDefault();
-  document.getElementById("pickUpData").innerText = moment(e.target.value).format('ddd D MMMM YYYY');
+  document.getElementById("pickUpData").innerText = moment(e.target.value).format('ddd. D MMMM YYYY');
+});
+
+
+const pickUpTime = document.getElementById("pickTime");
+const pickUpTimeDisplay = document.getElementById("pickUpTimeData");
+
+pickUpTime.addEventListener("change", (e) => {
+  e.preventDefault();
+
+  let value = pickUpTime.value;
+  pickUpTimeDisplay.textContent = value;
 });
 
 

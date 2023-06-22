@@ -48,7 +48,11 @@
             <label for="pickDate" class="label">Date of pickup</label>
 
             <div class="date-picker">
-              <img class="date-picker__icon-calendar" src="./assets/icons/calendar.svg" alt="calendar-icon" />
+              <img
+                class="date-picker__icon-calendar"
+                src="./assets/icons/calendar.svg"
+                alt="calendar-icon"
+              />
               <input
                 class="input -date"
                 type="date"
@@ -57,20 +61,90 @@
                 id="pickDate"
               />
               <p id="pickUpData">Wed. 26 March 2022</p>
-              <img class="date-picker__icon-dropdown" src="./assets/icons/dropdown.svg" alt="dropdown-icon" />
+              <img
+                class="date-picker__icon-dropdown"
+                src="./assets/icons/dropdown.svg"
+                alt="dropdown-icon"
+              />
             </div>
 
-            <input type="time" value="10:00" />
+
+
+
+
+
+            <div class="date-picker">
+              <img
+                class="date-picker__icon-calendar"
+                src="./assets/icons/clock.svg"
+                alt="clock-icon"
+              />
+              <input
+                class="input -time"
+                type="time"
+                name="pickup-time"
+                value="10:00"
+                id="pickTime"
+              />
+              <p id="pickUpTimeData" class="date-picker__icon-time">10:00</p>
+              <img
+                class="date-picker__icon-dropdown"
+                src="./assets/icons/dropdown.svg"
+                alt="dropdown-icon"
+              />
+            </div>
+
+
+
+
+
+
+
+
           </div>
           <div class="group -column -gap-xxs">
             <label for="delivery-date" class="label">Date of delivery</label>
-            <input
-              type="date"
-              name="delivery-date"
-              form-data="value"
-              id="delivery-date"
-            />
-            <input type="time" value="10:00" />
+            <div class="date-picker">
+              <img
+                class="date-picker__icon-calendar"
+                src="./assets/icons/calendar.svg"
+                alt="calendar-icon"
+              />
+              <input
+                class="input -date"
+                type="date"
+                name="pickup-date"
+                value="2022-03-26"
+                id="pickDate"
+              />
+              <p id="pickUpData">Tue. 29 Mar 2022</p>
+              <img
+                class="date-picker__icon-dropdown"
+                src="./assets/icons/dropdown.svg"
+                alt="dropdown-icon"
+              />
+            </div>
+
+            <div class="date-picker">
+              <img
+                class="date-picker__icon-calendar"
+                src="./assets/icons/clock.svg"
+                alt="clock-icon"
+              />
+              <input
+                class="input -time"
+                type="time"
+                name="pickup-time"
+                value="10:00"
+                id="pickTime"
+              />
+              <p id="pickUpTimeData" class="date-picker__icon-time">10:00</p>
+              <img
+                class="date-picker__icon-dropdown"
+                src="./assets/icons/dropdown.svg"
+                alt="dropdown-icon"
+              />
+            </div>
           </div>
         </div>
         <div class="group -row -gap-xxs -mb-lg">
@@ -88,7 +162,7 @@
         <button class="button">Search</button>
       </form>
     </section>
-    
+
     <script src="./assets/js/index.js"></script>
   </body>
 </html>
