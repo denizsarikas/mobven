@@ -12,3 +12,11 @@ checkboxOption.addEventListener("change", (e) => {
     }
   }
 });
+
+const pickUpDate = document.getElementById("pickDate");
+pickUpDate.addEventListener("change", (e) => {
+  e.preventDefault();
+  document.getElementById("pickUpData").innerText = moment(e.target.value).format('ddd D MMMM YYYY');
+});
+
+

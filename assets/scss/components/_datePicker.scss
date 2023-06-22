@@ -1,0 +1,22 @@
+.date-picker {
+  position: relative;
+  background-color: $white;
+  width: 100%;
+  padding: 21px 59px;
+
+  &__icon {
+    
+
+    &-calendar {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+    }
+
+    &-dropdown {
+      position: absolute;
+      top:16px;
+      right: 16px; 
+    }
+  }
+}
