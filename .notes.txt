@@ -3,3 +3,4 @@
 -time tamamen aynı değil
 -time ve date inputları için içini kaplayacak şekilde input koyup flex
 space between ile daha duzgun yerleştirilebilir.
+-time değerini ortaladığım class ismi doğru değil
