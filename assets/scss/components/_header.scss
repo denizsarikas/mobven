@@ -1,0 +1,50 @@
+.header {
+  width: 100%;
+  @include flex(column, baseline, flex-start);
+  gap: $xl;
+  align-self: stretch;
+  padding-bottom: 70px;
+
+  &__elements {
+    @include flex(row, space-between, center);
+    align-self: stretch;
+  }
+  
+  .search-form {
+      @include flex(row, baseline, center);
+      @include border(1px, solid, $periwinkle-light, 4px);
+      padding: $md;
+      width: 100%;
+      max-width: 327px;
+      gap: $sm;
+  }
+
+  &-menu {
+    @include flex(row, baseline, flex-start);
+    border-radius: $xs;
+
+    &__item {
+      @include flex(row, center, center);
+      padding: $md;
+      gap: $sm;
+      color: $midnight-express;
+      font-size: $fs-md;
+      font-family: $first-font;
+      font-weight: $font-medium;
+      cursor: pointer;
+      transition: all 0.05s ease-in;
+
+      &.-active {
+        background-color: $cornflower-blue;
+        color: $white;
+        border-radius: $r-sm;
+      }
+
+      &:hover {
+        background-color: $cornflower-blue;
+        color: $white;
+        border-radius: $r-sm;
+      }
+    }
+  }
+}

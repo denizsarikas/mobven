@@ -1,0 +1,43 @@
+.card {
+  @include flex(row, flex-start, flex-start);
+  width: 327px;
+  height: 208px;
+  padding: $xl;
+  gap: $md;
+  border-radius: $r-lg;
+
+  background: $ghost;
+
+  &:hover {
+    @include border(1px, solid, $periwinkle-light, $r-lg);
+    box-shadow: 0px 8px 23px 0px rgba(218, 224, 249, 0.7);
+  }
+
+  &__image {
+    width: 97px;
+    height: 97px;
+    flex-shrink: 0;
+    border-radius: $r-xl;
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+  }
+
+  &__info {
+    gap: $md;
+
+  }
+             
+  &__name {
+    color: $midnight-express;
+    font-size: $fs-lg;
+    font-family: $second-font;
+    font-weight: $font-black;
+  }
+
+  &__description {
+    padding-bottom: 12px;
+    color: $midnight-express;
+    font-size: $fs-sm;
+    font-family: $first-font;
+    font-weight: $font-medium;
+  }
+}
