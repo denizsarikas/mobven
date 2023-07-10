@@ -1,48 +1,21 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <title>Ülkeleri Fetchleme ve Filtreleme</title>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var countries = [];
-
-            fetch("https://restcountries.com/v2/all")
-                .then(function(response) {
-                    return response.json();
-                })
-                .then(function(data) {
-                    countries = data;
-                    showCountries(countries);
-                })
-                .catch(function(error) {
-                    console.log("Hata:", error);
-                });
-
-            var searchInput = document.getElementById("search-input");
-            searchInput.addEventListener("input", function() {
-                var searchValue = searchInput.value.toLowerCase();
-                var filteredCountries = countries.filter(function(country) {
-                    return country.name.toLowerCase().includes(searchValue);
-                });
-                showCountries(filteredCountries);
-            });
-
-            function showCountries(countriesToShow) {
-                var countriesList = document.getElementById("countries-list");
-                countriesList.innerHTML = "";
-
-                countriesToShow.forEach(function(country) {
-                    var countryItem = document.createElement("li");
-                    countryItem.textContent = country.name;
-                    countriesList.appendChild(countryItem);
-                });
-            }
-        });
-    </script>
-</head>
-<body>
-    <h1>Ülkeler</h1>
-    <input type="text" id="search-input" placeholder="Ülke ara">
-    <ul id="countries-list"></ul>
-</body>
+    <link rel="stylesheet" href="index.css" />
+    <script></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Ülkeler</h1>
+      <input
+        type="text"
+        id="search-input"
+        class="search-input"
+        placeholder="Ülke ara"
+      />
+      <ul id="countries-list" class="countries-list"></ul>
+      <script src="index.js"></script>
+    </div>
+  </body>
 </html>

@@ -1,0 +1,27 @@
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+}
+
+.search-input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.countries-list {
+    list-style: none;
+    padding: 0;
+}
+
+.country-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
