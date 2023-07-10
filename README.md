@@ -7,3 +7,4 @@ You may find my internship tasks in each branches
 
 ![Screenshot_14](https://github.com/denizsarikas/mobven/assets/75947870/3d576c97-86cd-4aed-bebb-5c43dfc0f7e7)
 
+![Screenshot_15](https://github.com/denizsarikas/mobven/assets/75947870/cdda681c-049a-4e4f-a890-2509bc83fbc2)
