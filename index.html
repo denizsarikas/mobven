@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ülkeleri Fetchleme ve Filtreleme</title>
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Ülkeler</h1>
+      <input
+        type="text"
+        id="search-input"
+        class="search-input"
+        placeholder="Ülke ara"
+      />
+      <div class="filter-buttons">
+        <button class="filter-button" data-region="Europe">Europe</button>
+        <button class="filter-button" data-region="Asia">Asia</button>
+        <button class="filter-button" data-region="Americas">America</button>
+        <button class="filter-button" data-region="Africa">Africa</button>
+        <button class="filter-button" data-region="Oceania">Oceania</button>
+        <button class="filter-button" data-region="Polar">Polar</button>
+        <button class="filter-button" id="show-all-button">Show All</button>
+      </div>
+      <ul id="countries-list" class="countries-list"></ul>
+    </div>
+  </body>
+</html>
