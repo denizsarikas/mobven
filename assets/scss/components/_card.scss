@@ -1,0 +1,11 @@
+.users-page {
+  // padding inside the card
+  background-color: $white;
+  padding: $xxxl;
+  border-radius: $r-lg;
+  width: 1225px;
+
+  .card__list {
+    @include flex(row, baseline, flex-start, wrap, 20px);
+  }
+}

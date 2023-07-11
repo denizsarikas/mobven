@@ -1,0 +1,15 @@
+.label {
+  &-group {
+    @include flex(row, baseline, baseline, wrap, $xs);
+  }
+
+  &__element {
+    padding: $xxs $sm;
+    background-color: $white;
+    @include border(1px, solid, $periwinkle, $r-sm);
+    font-family: $first-font;
+    font-size: $fs-xs;
+    color: $royal-blue;
+    font-weight: $font-medium;
+  }
+}
