@@ -1,6 +1,8 @@
 .title {
-    color: $midnight-express;
-    font-size: $fs-xl;
-    font-family: $second-font;
-    font-weight: $font-black;
-  }
+  color: var(--style, #132A46);
+  font-family: Poppins;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
