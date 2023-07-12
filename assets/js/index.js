@@ -4,7 +4,6 @@ function copyLink() {
     var linkText = document.getElementById("link-text");
     var copyButton = document.getElementById("copy-button");
 
-    // Kopyalanan linki kullanıcıya bildirme
     copyButton.innerText = "Copied";
     copyButton.disabled = true;
     copyButton.classList.add("disabled-button");
@@ -17,10 +16,17 @@ function copyLink() {
     document.execCommand("copy");
     document.body.removeChild(tempInput);
 
-    // Belirli bir süre sonra butonu eski haline getirme
+
     setTimeout(function () {
         copyButton.innerText = "Copy Link";
         copyButton.disabled = false;
         copyButton.classList.remove("disabled-button");
     }, 2000);
 }
+
+function updateSelectedValue() {
+    var selectElement = document.getElementById("permissions");
+    var selectedValue = selectElement.options[selectElement.selectedIndex].value;
+    var valueElement = document.getElementById("selected-value");
+    valueElement.textContent = selectedValue;
+  }
