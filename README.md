@@ -18,13 +18,13 @@ You may find my internship tasks in each branches
 ![Screenshot_14](https://github.com/denizsarikas/mobven/assets/75947870/3d576c97-86cd-4aed-bebb-5c43dfc0f7e7)
 
 
-<p>Homework1 - Vanilla JS to manipulate dom and fetch data.</p>
+<p>Homework4 - Vanilla JS to manipulate dom and fetch data.</p>
 
 
 ![Screenshot_15](https://github.com/denizsarikas/mobven/assets/75947870/cdda681c-049a-4e4f-a890-2509bc83fbc2)
 
 
-<p>Homework1 - design with scss and some vanilla js functions to make the design get into the product endvironment</p>
+<p>Homework5 - design with scss and some vanilla js functions to make the design get into the product environment</p>
 
 
 ![Screenshot_3](https://github.com/denizsarikas/mobven/assets/75947870/b3878120-31a0-42b1-ac26-25f3d375b2c2)
