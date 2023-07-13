@@ -1,99 +1,96 @@
 .section {
-    display: flex;
-    padding: 56px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 39px;
-    border-radius: 24px;
-    background: #FFF;
-    box-shadow: 0px 14px 94px 0px rgba(19, 104, 149, 0.55);
+  display: flex;
+  padding: 56px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 39px;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0px 14px 94px 0px rgba(19, 104, 149, 0.55);
 
-    &__subtitle {
-        color: #132A46;
-        font-family: Poppins;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-    }
-
-    &__subdiv {
-        width: 319px;
-        height: 66px;
-        display: flex;
-        flex-direction: column;
-        align-items: start;
-
-        p {
-            color: var(--style, #132A46);
-            font-family: Poppins;
-            font-size: 16px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-            opacity: 0.7;
-        }
-    }
-
-}
-
-.copy-link {
+  &__link {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 16px;
     border-radius: 16px;
-    background: #E8F5F3;
+    background: #e8f5f3;
     padding: 56px;
 
     label {
-        display: flex;
-        width: 644px;
-        align-items: center;
-        /* Değişiklik */
-        justify-content: center;
-        /* Değişiklik */
-        gap: 10px;
-        border-radius: 8px;
-        border: 1px solid #BDE5C8;
-        background: #FFF;
-        padding: 24px;
+      display: flex;
+      width: 644px;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 8px;
+      border: 1px solid #bde5c8;
+      background: #fff;
+      padding: 24px;
     }
 
     button {
-        display: flex;
-        align-items: center;
-        /* Değişiklik */
-        justify-content: center;
-        /* Değişiklik */
-        gap: 10px;
-        border-radius: 8px;
-        background: #4E7D75;
-        padding: 24px;
-        cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      border-radius: 8px;
+      background: #4e7d75;
+      padding: 24px;
+      cursor: pointer;
+      color: white;
     }
-}
+  }
 
-.status {
+  &__subtitle {
+    color: #132a46;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  &__subdiv {
+    width: 319px;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+    p {
+      color: var(--style, #132a46);
+      font-family: Poppins;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      opacity: 0.7;
+    }
+  }
+
+  &__status {
     position: relative;
     display: flex;
+    justify-items: start;
     align-items: center;
     width: 300px;
     height: 200px;
+    gap: 2px;
 
     select {
-        width: 100%;
-        height: 100%;
-        border: none;
-        opacity: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      opacity: 0;
     }
 
     .custom-select {
-        width: 100%;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      align-items: center;
+      gap: 2px;
     }
 
     // .icon{
@@ -114,28 +111,39 @@
     // }
 
     .icon {
-        &.-value {
-            color: var(--style, #132A46);
-            font-family: Poppins;
-            font-size: 18px;
-            font-style: normal;
-            font-weight: 500;
-            line-height: normal;
-        }
-    }
-}
+      &.-value {
+        color: var(--style, #132a46);
+        font-family: Poppins;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
 
-a {
-    color: #4E7D75;
+      &.-key {
+        width: 34px;
+        height: 34px;
+      }
+
+      &.-arrowDown {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+
+  &__feedback {
+    color: #4e7d75;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-decoration-line: underline;
+  }
 }
 
 .disabled-button {
-    color: red;
-    cursor: default;
+  color: red;
+  cursor: default;
 }

@@ -1,4 +1,3 @@
-console.log("Hello!")
 
 function copyLink() {
     var linkText = document.getElementById("link-text");

@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <title>Mobven HW-5</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/main.css" />
-  <title>Mobven HW-5</title>
-</head>
+  <body>
+    <main class="main">
 
-<body>
-  <main class="main">
-    <section class="section">
-      <h1 class="title">Share document</h1>
-      <div class="copy-link">
-        <label id="link-text">www.example.com/blablabla</label>
-        <button id="copy-button" onclick="copyLink()">Copy Link</button>
-      </div>
-      <p class="section__subtitle">Permission</p>
-      <div class="section__subdiv">
-        <div class="status">
-          <div class="custom-select">
-            <img class="icon -key" src="/assets/icons/iconKey.svg" alt="iconKey" />
-            <p class="icon -value" id="selected-value">Public</p>
-            <img class="icon -arrowDown" src="/assets/icons/iconDownArrow.svg" alt="iconDownArrow" />
-          </div>
-          <select name="permissions" id="permissions" onchange="updateSelectedValue()">
-            <option value="Public">Public</option>
-            <option value="Private">Restricted</option>
-            <option value="Custom">Custom</option>
-          </select>
+      <section class="section">
+        <h1 class="title">Share document</h1>
+        <div class="section__link">
+          <label class="link-text" id="link-text"
+            >www.example.com/blablabla</label
+          >
+          <button class="link-button" id="copy-button" onclick="copyLink()">
+            Copy Link
+          </button>
         </div>
-        <p>Only people you add can open this link</p>
-      </div>
-      <a href="#">Send feedback</a>
-    </section>
-  </main>
-</body>
-<script src="assets/js/index.js"></script>
-
+        <p class="section__subtitle">Permission</p>
+        <div class="section__subdiv">
+          <div class="section__status">
+            <div class="custom-select">
+              <img
+                class="icon -key"
+                src="/assets/icons/iconKey.svg"
+                alt="iconKey"
+              />
+              <p class="icon -value" id="selected-value">Public</p>
+              <img
+                class="icon -arrowDown"
+                src="/assets/icons/iconDownArrow.svg"
+                alt="iconDownArrow"
+              />
+            </div>
+            <select
+              name="permissions"
+              id="permissions"
+              onchange="updateSelectedValue()"
+            >
+              <option value="Public">Public</option>
+              <option value="Private">Restricted</option>
+              <option value="Custom">Custom</option>
+            </select>
+          </div>
+          <p class="permission">Only people you add can open this link</p>
+        </div>
+        <a class="section__feedback" href="#">Send feedback</a>
+      </section>
+      
+    </main>
+  </body>
+  <script src="assets/js/index.js"></script>
 </html>
