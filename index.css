@@ -1,56 +1,126 @@
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .heading {
-    text-align: center;
+  text-align: center;
 }
 
 .search-input {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .countries-list {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .country-item {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
-    display: flex;
-    justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
 }
 
 .country-item .country-name {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .country-item .country-region {
-    color: #999;
+  color: #999;
 }
 
 .filter-button {
-    display: inline-block;
-    padding: 8px 16px;
-    margin-right: 10px;
-    background-color: #f5f5f5;
-    color: #333;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+  display: inline-block;
+  padding: 8px 16px;
+  margin-right: 10px;
+  background-color: #f5f5f5;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .filter-button:hover {
-    background-color: #e0e0e0;
+  background-color: #e0e0e0;
 }
 
 .active {
-    background-color: #333;
-    color: #fff;
+  background-color: #333;
+  color: #fff;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.hamburger span {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background-color: #333;
+  margin: 6px auto;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+.nav-links a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
   }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+  }
+
+  .nav-links a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+
+  #toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+
+  #toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(10px) rotate(-45deg);
+  }
+
+  #toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+  }
+
+  #toggle:checked ~ .nav-links {
+    display: flex;
+  }
+}
+
+.checkbox{
+    display: none;
+}
